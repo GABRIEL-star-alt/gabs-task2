@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="si.css">
+    <title>Document</title>
+</head>
+<body id="b">
+    <div id="first">
+        
+        Game X<br>
+        <button id="ldb" onclick="dldb()"> Leader Board</button><br>
+        <form id="forms">
+            <!-- <img src="bck (1).jpg" alt="j" display="none" ><br> -->
+            <img src="gallery2.jpg" alt="j" display="none" id="img"><br>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+        </form>
+        <button id="go" onclick="play()"> Go</button>
+        
+    </div>
+    <div id="main">
+<canvas id="can">
+
+</canvas>
+    </div>
+    <script>
+        var set=0
+        var sd=0
+        var ldbarr=[]
+        var x5,y5,p5,q5
+        // localStorage.clear()
+function comparen(a,b){
+            return a-b;
+        }
+        ldbarr=ldbarr.map(str=>{
+            return parseInt(str,10);
+        })
+console.log(ldbarr)
+ldbarr.sort(comparen);
+console.log(ldbarr);
+// var hit= new audio('hit.mp3')
+var swx=[];
+// swx.pop();
+ldbarr.sort()
+ldbarr.reverse()
+console.log(swx);
+ldbarr.forEach((er,io)=>{
+    ldbarr[io]=parseInt(er);
+
+     })
+     // console.key(0)
+     console.log(ldbarr[0])
+     // var booh=document.getElementById("ldrb");
+     // var ef
+     // a.innerHTML=ef 
+     
+     function play(){
+        set=1
+            setInterval(() => {
+                sd++
+                if(sd%2==0){
+            document.getElementById("first").style.backgroundColor="violet"
+            document.getElementById("b").style.backgroundColor="red"
+            
+                }
+                if(sd%2==1){
+                    document.getElementById("first").style.backgroundColor="red"
+                    document.getElementById("b").style.backgroundColor="violet"
+            
+                }
+            },400);
+            document.getElementById("main").style.display="block"
+            document.getElementById("first").style.display="none"
+            var x1=document.getElementById("fname").value;
+            localStorage.setItem("plname",x1)
+            e2=localStorage.getItem("plname")
+            if(name!=""&&localStorage.length!=0){
+                    fh=1;
+                    localStorage.removeItem("roopak");
+                }
+                
+                if(localStorage.length==0||!(localStorage.getItem(name))){
+                    for(let i=0;i<890;i++){
+                    console.log("h")}
+                     localStorage.setItem(name,0);
+                }
+                else{
+                    hiscore=localStorage.getItem(e2);
+                }
+                setInterval(() => {
+                    
+                    shenpos.push({x:Math.ceil(Math.random()*w),y:Math.ceil(Math.random()*h)-100,a:[]})
+                }, 3000);
+                setInterval(() => {
+                    shenpos.forEach((e,i)=>{
+                       e.a.push({x:e.x+25,y:e.y+50})
+                       x5=e.x
+                y5=e.y
+                    })
+                }, 3000);
+                setInterval(() => {
+                    co++
+                }, 20);
+                var e2=setInterval(at4,800)
+                function at4(){
+
+                    
+                    bosbu.push({x:w/2,y:200})
+                
+                }
+                // setInterval(at5,800)
+                // function at5(){}
+                var b
+                
+                setInterval(time,4000);
+                setInterval(gh,400)
+                function gh(){
+                    for(let i=0;i<en.length;i++){
+                        splbu.push({x1:en[i].x+25,y1:en.y})
+                    }
+                }
+                setInterval(at2,10000)
+                function at2(){
+                    
+                    bons.push({x:Math.ceil(Math.random()*(w-200)+200),y:0})
+                }
+                // var boef=setInterval(rec,300)
+                setInterval(at1,600)
+                console.log(set,"fuuu")
+            }
+            // if(set==1){
+                var e1=setInterval(at3,800)
+                var tr=setInterval(at,800)
+                function at3(){
+                    enbu1.push({x:1300+25,y:100+50})
+                    
+                }
+                function at(){
+                    enbu.push({x:100+25,y:100+50})
+                }
+                function rec(){
+                    
+                    bu.push({x:position.x,y:position.y})
+                    bu.push({x:position.x+50,y:position.y})
+                    
+                }
+                function forclr(){
+                    cnt++
+                }
+                // localStorage.clear()
+        function dldb(){
+            for(let i=0;i<3;i++){
+                for(let y=0;y<localStorage.length;y++){
+                    console.log(ldbarr[i])
+                // console.log(y,localStorage.key(y),localStorage.getItem(localStorage.key(y)),ldbarr[i])
+    
+                   if(localStorage.getItem(localStorage.key(y))==ldbarr[i]){
+                   swx.push(localStorage.key(y));
+                console.log("xjnl")
+                    break;
+               }
+            }
+            }
+            console.log("bkjhbvcjghvjg")
+            var qw=document.getElementById('first')
+            var df=document.createElement('div')
+            df.classList.add("ldrb")
+            df.setAttribute('id','ldrbo');
+            
+            qw.appendChild(df)
+
+            var qw1=document.getElementById('main')
+            var df1=document.createElement('div')
+            df1.classList.add("ldrbu")
+            df1.setAttribute('id','ldrbou');
+            
+            qw1.appendChild(df1)
+
+            document.getElementById('ldrbo').innerHTML=" 1 ."+swx[0]+":"+ldbarr[0]+"<br>"+" 2 ."+swx[1]+":"+ldbarr[1]+"<br>"+" 3 ."+swx[2]+":"+ldbarr[2];
+console.log(swx)
+}
+        var imgs=document.getElementById("img")
+        var shenbu=[]
+        var shenpos=[]
+        var co=0
+        function drawshen(){
+shenpos.forEach((e,i)=>{
+
+c.drawImage(imgs,e.x,e.y)
+// console.log(e.x,e.y)
+
+
+})
+for(let j=0;j<bu.length;j++){
+for(let i=0;i<shenpos.length;i++){
+let x,y
+if(shenpos[i].y+50>=bu[j].y-10&&shenpos[i].y<=bu[j].y+10&&(bu[j].x+10>=shenpos[i].x&&bu[j].x-10<=shenpos[i].x+50)){
+       
+         shenpos.splice(i,1)
+         bu.splice(j,1)
+    }
+}
+}
+        }
+
+function drawshenbu(){
+    shenpos.forEach((e,i)=>{
+e.a.forEach((er,ir)=>{
+c.fillStyle="#D2691E"
+    c.beginPath()
+    c.arc(er.x,er.y,8,0,2*Math.PI )
+    c.fill()
+})
+
+    })
+}        
+//         function drawshenbu(){
+// shen[0].forEach((e,i)=>{
+// e.push({x:shenpos[i].x+25,y:shenpos[i].y})
+
+
+// })
+        
+
+        // document.getElementById("b").style.backgroundColor="red"
+        var e2
+var fg
+var det1=0
+var det2=0
+
+var name=e2
+document.getElementById("b").style.height="window.InnerWidth"
+var g1=0
+var g2=0
+var sr=0
+var sr1=0
+var sr2=0
+var splbu=[]
+var k3,z3=0;
+var z1=0
+var a=document.getElementById("can")
+var c=a.getContext("2d")
+var h=window.innerHeight
+var w=window.innerWidth
+console.log(h,w)
+a.height=window.innerHeight-50
+a.width=window.innerWidth-100
+bon={x:Math.ceil(Math.random()*(w-200)+200),y:0}
+var position={x:w/2,y:h-100}
+var position1={x:w/2-25,y:h-220}
+var en=[{x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))},{x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))},{x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))},{x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))}]
+var en1=[{x:Math.ceil(Math.random()*(w-100)),y:60},{x:Math.ceil(Math.random()*(w-100)),y:60},{x:Math.ceil(Math.random()*(w-100)),y:60},{x:Math.ceil(Math.random()*(w-100)),y:60}]
+var en2=[{x:Math.ceil(Math.random()*(w-100)),y:60},{x:Math.ceil(Math.random()*(w-100)),y:60},{x:Math.ceil(Math.random()*(w-100)),y:60},{x:Math.ceil(Math.random()*(w-100)),y:60}]
+var enbu=[]
+var enbu1=[]
+var opts=[{x:125,y:100},{x:1325,y:100},{x:w/2,y:100}]
+var bu=[]
+var tbu=[]
+var budir=[{x:position.x+25,y:100}]
+var t=0,k
+var x,y,z=0
+var k2,z2=0
+var ang;
+var id=[{x:100}]
+var ck=0
+var bosbu=[]
+var bobu1=[]
+var bobu2=[]
+ var eri={x:125,y:150}
+ var eri1={x:1325,y:150}
+var bonbu1=[]
+var bonbu2=[]
+var f1,f2
+var k4,z4=0
+var score=0
+var po=Math.ceil(Math.random()*15+5)
+// var e2=localStorage.getItem("plname")
+var hiscore
+var ldbarr=[]
+var bons=[]
+var bull=new Audio('bullet.mp3')
+var ch2=0
+var x1,y1
+var cnt=0
+function at1(){
+    if(!(ch==1&&ch1==1&&ch2==1)&&( ch==0&&ch1==0&&ch2==1)||((eri.x-f1<=150&&eri.x+f1>=100) &&(eri.y+f1>=position.y))||((eri1.x-f2<=1350&&eri1.x+f2>=1300)&&(eri1.y+f2>=position.y)))
+    bonbu1.push({x:position.x+25,y:position.y})
+    bonbu2.push({x:position.x+25,y:position.y})
+if((ch==1&&ch1==1&&ch2==1)){
+    bonbu1.splice(0,bonbu1.length)
+    bonbu2.splice(0,bonbu1.length)
+
+}
+}
+function comparen(a,b){
+            return a-b;
+        }
+if(name!=""&&localStorage.length!=0){
+            fh=1;
+            localStorage.removeItem("roopak");
+        }
+        
+        if(localStorage.length==0||!(localStorage.getItem(name))){
+            localStorage.setItem(name,0);
+        }
+        else{
+            hiscore=localStorage.getItem(name);
+        }
+        for(let i=0;i<localStorage.length;i++){
+            if(localStorage.key(i)!="speed"&&localStorage.key(i)!="plname"&&localStorage.key(i)!="plname1"&&localStorage.key(i)!="plname2"&&localStorage.key(i)!="speed2"&&localStorage.key(i)!="speed1"&&localStorage.key(i)!="score1"&&localStorage.key(i)!="score2")
+           ldbarr.unshift(localStorage.getItem(localStorage.key(i)));
+        }
+    // console.log(ldbarr)
+//      ldbarr.forEach((er,io)=>{
+// ldbarr[io]=parseInt(er);
+
+//     })
+ ldbarr=ldbarr.map(str=>{
+    return parseInt(str,10);
+})
+console.log(ldbarr)
+ldbarr.sort(comparen);
+    console.log(ldbarr);
+     //console.log(ldbarr)
+// for(let i=0;i<ldbarr.length;i++){
+// }
+// console.log(ldbarr)
+    
+
+//return arr;
+//};
+        for(let j=0;j<ldbarr.length;j++){
+        console.log(ldbarr[j]);
+        }
+        ldbarr.reverse();
+        for(let j=0;j<ldbarr.length;j++){
+        console.log(ldbarr[j]);
+        }
+        
+        // var swx=["h"];
+        // swx.pop();
+        // for(let i=0;i<3;i++){
+        //    for(let y=0;y<localStorage.length;y++){
+        //    if(localStorage.getItem(localStorage.key(y))==ldbarr[i]){
+        //        swx.push(localStorage.key(y));
+        //        break;
+        //    }
+        // }
+        // }
+        console.log(swx);
+        // var booh=document.getElementById("ldrb");
+        // var ef
+        // a.innerHTML=ef
+        //  booh.innerHTML="   1"+swx[0]+":"+ldbarr[0]+"<br>"+"   2"+swx[1]+":"+ldbarr[1]+"<br>"+"3   "+swx[2]+":"+ldbarr[2];
+ 
+
+function time(){
+ t=t+1;
+en.push({x:Math.ceil(Math.random()*(w-100)),y:60})
+        en.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en2.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en2.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en2.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+        en2.push({x:Math.ceil(Math.random()*(w-100)),y:Math.ceil(Math.random()*(h-100))})
+
+        t=0
+
+}
+
+function pa(){
+    bu.push({x:position.x+25,y:position.y})
+    bull.play()
+}
+var ch=0
+var ch1=0
+var dir={x:0,y:0}
+function drawbonbu1(){
+    bonbu1.forEach((e,i)=>{
+if(i%2==0){
+c.fillStyle="#FF00FF"}
+if(i%2==1){
+c.fillStyle="#FFA07A"}
+        c.beginPath();
+        
+        c.arc(e.x, e.y, 20,0, 2 * Math.PI);
+        c.fill();
+    })
+}
+function drawbonbu2(){
+    bonbu2.forEach((e,i)=>{
+        if(i%2==0){
+c.fillStyle="#FF00FF"}
+if(i%2==1){
+c.fillStyle="#FFA07A"}
+
+c.beginPath();
+
+c.arc(e.x, e.y, 20, 0, 2 * Math.PI);
+c.fill();
+})
+}
+function drawh(){
+    bosbu.forEach((e,i)=>{
+    if(e.y-10<=position1.y+100&&e.y+10>=position1.y&&(e.x+10>=position1.x&&e.x-10<=position1.x+100)&&set==1){
+            
+            k=1.7
+            z+=k
+            bosbu.splice(i,1)
+            if(z>=50){
+                
+                z=50
+            }
+           
+            } 
+})
+splbu.forEach((e,i)=>{
+    if(e.y-10<=position1.y+100&&e.y+10>=position1.y&&(e.x+10>=position1.x&&e.x-10<=position1.x+100)){
+            
+            k=0.2
+            z+=k
+            splbu.splice(i,1)
+            if(z>=50){
+                
+                z=50
+            }
+           
+            } 
+})
+enbu1.forEach((e,i)=>{
+    if(e.y-10<=position1.y+100&&e.y+10>=position1.y&&(e.x+10>=position1.x&&e.x-10<=position1.x+100)&&set==1){
+                
+            k=0.1
+            z+=k
+            enbu1.splice(i,1)
+            if(z>=50){
+                
+                z=50
+            }
+           
+            } 
+})
+enbu.forEach((e,i)=>{
+    if(e.y-10<=position1.y+100&&e.y+10>=position1.y&&(e.x+10>=position1.x&&e.x-10<=position1.x+100)&&set==1){
+            
+            k=0.1
+            z+=k
+            enbu.splice(i,1)
+            if(z>=50){
+                
+                z=50
+            }
+           
+            } 
+})
+    // c.drawImage(imgs,100,100)
+
+    for(let i=0;i<en.length;i++){
+        if(en[i].y+50>=position1.y){
+            
+            k=0.1
+            z+=k
+            en.splice(i,1)
+            for(let i=0 ;i<100;i++){
+            }}
+    }
+    for(let i=0;i<shenpos.length;i++){
+        if(shenpos[i].y+50>=position1.y){
+            
+            k=0.1
+            z+=k
+            shenpos.splice(i,1)
+            for(let i=0 ;i<100;i++){
+            }}
+    }
+    c.fillStyle="red"
+    c.fillRect(0, 0, 50, 10); 
+    c.fillStyle="green"
+    c.fillRect(0, 0, 50-z, 10);
+    k=0; 
+
+}
+function drawbon(){
+    po=Math.ceil(Math.random()*15+5)
+    bons.forEach((e,i)=>{
+        c.fillStyle="blue"
+        c.beginPath();
+    
+    c.arc(e.x, e.y, po, 0, 2 * Math.PI);
+    c.fill();
+    })
+    //  c.fillRect(bon.x, bon.y, Math.ceil(Math.random()*15),Math.ceil(Math.random()*15) );  
+}
+function drawsh2(){
+    c.fillStyle="green"
+    c.fillRect(1300, 100, 50, 50);
+    if(z3>=50){
+    //     c.clearRect(1300,90,50,10)
+    //     // c.clearRect(1300,90,50-z3,10)
+    // c.clearRect(1300,100,50,50)
+enbu1.splice(0,enbu1.length )
+    ch1=1
+}
+}
+var v=Math.random()*w
+var v1=Math.random()*h
+
+function drawbckstrs(){
+for(let i=0;i<1000;i++){
+    c.fillStyle="white"
+     
+
+    c.beginPath()
+    c.arc(Math.random()*w,Math.random()*h,Math.random()*5,0,2*Math.PI)
+    c.fill()
+}
+}
+function drawhb2(){
+
+for(let i=0;i<bu.length;i++){
+    if(bu[i].y-10<=150&&(bu[i].x+10>=1300&&bu[i].x-10<=1350)){ 
+         
+        k3=0.3
+            z3+=k3
+             bu.splice(i,1)
+           if(z3>=50){ 
+            sr2=1
+            z3=50
+            enbu1.splice(0,enbu.length)
+            clearInterval(e1)
+            if(opts.length==3){
+            opts.splice(1,1)}
+           }
+        }
+    }
+    for(let i=0;i<bonbu1.length;i++){
+        if((bonbu1[i].x+20>=1300&&bonbu1[i].x-20<=1350)&&(bonbu1[i].y-20<=150&&bonbu1[i].y+20>=100)){
+            k3=1
+            z3+=k3
+             bonbu1.splice(i,1)
+           if(z3>=50){ 
+            
+            z3=50
+            if(opts.length==3){
+            opts.splice(1,1)}
+           }
+        }
+    }
+    for(let i=0;i<bonbu2.length;i++){
+        if((bonbu2[i].x+20>=1300&&bonbu2[i].x-20<=1350)&&(bonbu2[i].y-20<=150&&bonbu2[i].y+20>=100)){
+            k3=1
+            z3+=k3
+             bonbu2.splice(i,1)
+           if(z3>=50){ 
+            
+            z3=50
+            if(opts.length==3){
+            opts.splice(1,1)}
+           }
+        }
+    }
+    c.fillStyle="red"
+    c.fillRect(1300, 90, 50, 10); 
+    c.fillStyle="blue"
+    c.fillRect(1300, 90, 50-z3, 10);
+    if(z3>=50){
+        // c.clearRect(1300,90,50,10)
+    }
+    k=0; 
+// console.log("f")
+}
+function drawenbu1(){
+
+//     a.innerHTML=ef
+// a.innerHTML="dgfs"
+c.fillText("score:"+ef, 10, 50);
+
+enbu1.forEach((er,ir)=>{
+        if(er.y>=position.y){
+            enbu1.splice(ir,1)
+        }
+        c.fillStyle="orange"
+    c.beginPath();
+c.arc(er.x, er.y, 10, 0, 2 * Math.PI);
+c.fill();})
+}
+function drawhb1(){
+for(let i=0;i<bu.length;i++){
+    if(bu[i].y-10<=150&&(bu[i].x+10>=100&&bu[i].x-10<=150)){
+         
+        k2=0.3
+            z2+=k2
+             bu.splice(i,1)
+             if(z2>=50){
+                sr1=1
+                clearInterval(tr)
+                enbu1.splice(0,enbu.length)
+
+                if(opts.length==3){
+            opts.splice(0,1)}
+            z2=50
+           }
+        }
+    }
+    for(let i=0;i<bonbu1.length;i++){
+        if((bonbu1[i].x+20>=100&&bonbu1[i].x-20<=150)&&(bonbu1[i].y-20<=150&&bonbu1[i].y+20>=100)){
+            k2=1
+            z2+=k2
+             bonbu1.splice(i,1)
+             if(z2>=50){
+                if(opts.length==3){
+            opts.splice(0,1)}
+            z2=50
+        }
+    }}
+    for(let i=0;i<bonbu2.length;i++){
+        if((bonbu2[i].x+20>=100&&bonbu2[i].x-20<=150)&&(bonbu2[i].y-20<=150&&bonbu2[i].y+20>=100)){
+            k2=1
+            z2+=k2
+             bonbu2.splice(i,1)
+             if(z2>=50){
+                if(opts.length==3){
+            opts.splice(0,1)}
+            z2=50
+        }
+    }}
+    c.fillStyle="red"
+    c.fillRect(100, 90, 50, 10); 
+    c.fillStyle="blue"
+    c.fillRect(100, 90, 50-z2, 10);
+    k=0; 
+}
+var u
+function drawsplbu(){
+    u=Math.ceil(Math.random()*15)+3
+splbu.forEach((e,i)=>{
+    c.fillstyle="red"
+c.beginPath()
+c.arc(e.x,e.y,u,0,2*Math.PI)
+c.stroke()
+
+})
+
+
+}
+
+function drawhb(){
+    bosbu. forEach((e,i)=>{
+    if(e.y-10<=position.y+50&&e.y+10>=position.y&&(e.x+10>=position.x&&e.x-10<=position.x+50)){
+            
+            k1=0.1
+            z1+=k1
+            bosbu.splice(i,1)
+            if(z1>=50){
+                
+                z1=50
+            }
+           
+            } 
+})
+    shenpos.forEach((q,w)=>{
+q.a. forEach((e,i)=>{
+    if(e.y-u<=position.y+50&&e.y+u>=position.y&&(e.x+u>=position.x&&e.x-u<=position.x+50)){
+            
+            k1=0.05
+            z1+=k1
+            q.a.splice(i,1)
+            if(z1>=50){
+                
+                z1=50
+            }
+           
+            } 
+})
+})
+    for(let i=0;i<en2.length;i++){
+        if(en2[i].y+50>=position.y&&en2[i].y<=position.y+50&&en2[i].x+50>=position.x&&en2[i].x<=position.x+50){
+             
+            k1=0.2
+            z1+=k1
+            en2.splice(i,1)
+            if(z1>=50){
+                
+            z1=50
+        }
+            }
+            
+    }
+    for(let i=0;i<en.length;i++){
+        if(en[i].y+50>=position.y&&en[i].y<=position.y+50&&en[i].x+50>=position.x&&en[i].x<=position.x+50){
+             
+            k1=0.1
+            z1+=k1
+            en.splice(i,1)
+            if(z1>=50){
+                
+            z1=50
+        }
+            }
+            
+    }
+    for(let i=0;i<enbu.length;i++){
+        if(enbu[i].y+10>=position.y&&(enbu[i].x+10>=position.x&&enbu[i].x-10<=position.x+50)&&set==1){
+            
+            k1=0.2
+            z1+=k1
+            enbu.splice(i,1)
+            //          c.fillStyle="red"
+            //  c.fillRect(position.x, position.y+25, 50, 10); 
+            //  c.fillStyle="green"
+            //  c.fillRect(position.x, position.y+25, 50-z1, 10);
+            if(z1>=50){
+                
+                z1=50
+            }
+            //  for(let i=0;i<enbu1.length;i++){
+                //          k=0; 
+                //         }
+                
+                if(enbu1[i].y+10>=position.y&&(enbu1[i].x+10>=position.x&&enbu1[i].x-10<=position.x+50)&&set==1){
+                    
+                    k1=0.3
+                    z1+=k1
+                    enbu1.splice(i,1)
+                    
+                    k=0; 
+                }}
+            }
+            c.fillStyle="red"
+         c.fillRect(position.x, position.y+25, 50, 10); 
+         c.fillStyle="green"
+         c.fillRect(position.x, position.y+25, 50-z1, 10);
+}
+function drawtb(){
+    for(let i=0;i<en.length;i++){
+        if(i==1){
+            // break;
+        }
+if(en[i].y+50>=position1.y-70){
+    tbu.push({x:position1.x+50,y:position1.y})
+    if(i%2==0){
+    c.fillStyle="violet"}
+    if(i%2==1){
+    c.fillStyle="red"}
+    c.beginPath();
+    
+c.arc(tbu[i].x, tbu[i].y, 10, 0, 2 * Math.PI);
+c.fill();
+}
+    }
+}
+
+function drawbos(){
+    c.fillStyle="red"
+     c.fillRect(w/2-100, 0, 200, 200); 
+
+
+
+}
+
+
+function drawbosh(){
+    for(let i=0;i<bu.length;i++){
+
+    if(bu[i].y-10<=200&&(bu[i].x+10>=w/2-100&&bu[i].x-10<=w/2+100)){
+         
+         k4=0.2
+             z4+=k4
+              bu.splice(i,1)
+            }
+        }
+        for(let i=0;i<bonbu1.length;i++){
+            // console.log("ah damn")
+            if((bonbu1[i].x+20>=w/2-100&&bonbu1[i].x-20<=w/2+100)&&(bonbu1[i].y-20<=200&&bonbu1[i].y+20>=0)){
+                k4=1.2
+             z4+=k4
+              bonbu1.splice(i,1)
+            }
+        }
+        for(let i=0;i<bonbu2.length;i++){
+            if((bonbu2[i].x+20>=w/2-100&&bonbu2[i].x-20<=w/2+100)&&(bonbu2[i].y-20<=200&&bonbu2[i].y+20>=0)){
+                k4=1.3
+             z4+=k4
+              bonbu2.splice(i,1)
+            }
+        }
+        c.fillStyle="red"
+        c.fillRect(w/2-100, 100, 200, 10); 
+        c.fillStyle="blue"
+        c.fillRect(w/2-100, 100, 200-z4, 10);
+        if(z4>=200){
+            sr=1
+            bosbu.splice(0,bosbu.length)
+           if(opts.length==3){
+        }
+       opts.splice(2,1)
+    //    c.clearRect(w/2-100,0,200,200)
+ch2=1
+       z4=200
+   }
+     k4=0; 
+        }
+        var ips=1
+        var ipsc=1
+function drawbu(){
+    for (let i=0;i<bons.length;i++){
+        let iop=bons[i].y+po>=position.y&&bons[i].y-po<=position.y+50&&(bons[i].x+po>=position.x&&bons[i].x-po<=position.x+50)&&ips
+        if(bons[i].y+po>=position.y&&bons[i].y-po<=position.y+50&&(bons[i].x+po>=position.x&&bons[i].x-po<=position.x+50)){
+            // ips=1
+            // bons.pop()
+
+        }
+        if(bons[i]-po>=h){
+            bons.pop()
+        }
+if(iop)
+{
+ fg=setInterval(rec,100)
+ if(z>=6){
+z-=6}
+b=setInterval(forclr,1000)
+ips=0
+ipsc=1
+}
+if(cnt>=6&&ipsc){
+    console.log(cnt)
+
+console.log("hbfksjflasifhlasjfbalskfjb")
+clearInterval(fg)
+clearInterval(b)
+cnt=0
+ips=1
+ipsc=0
+// console.log(cnt)
+// console.log(ips)
+}
+
+}
+    for(let j=0;j<bu.length;j++){
+    for(let i=0;i<en2.length;i++){
+    let x,y
+        if(en2[i].y+50>=bu[j].y-10&&(bu[j].x+10<=en2[i].x+50&&bu[j].x-50>=en2[i].x)){
+            // console.log(en,bu)
+            console.log("finish")
+             en2.splice(i,1)
+             bu.splice(j,1)
+        }
+    }
+    }
+    
+    for(let j=0;j<bu.length;j++){
+for(let i=0;i<en.length;i++){
+let x,y
+    if((en[i].y+50>=bu[j].y-10)&&(en[i].y<=bu[j].y+10)&&(bu[j].x-10<=en[i].x+50&&bu[j].x+10>=en[i].x)){
+        console.log("finish")
+score++
+console.log(score)
+        en.splice(i,1)
+         bu.splice(j,1)
+    }
+}
+}
+
+    bu.forEach((er,ir)=>{
+        if(er.y<=0){
+            bu.splice(ir,1)
+        }
+        if(ir%2==0){
+        c.fillStyle="red"}
+        if(ir%2==1){
+        c.fillStyle="yellow"}
+    c.beginPath();
+c.arc(er.x, er.y, 10, 0, 2 * Math.PI);
+c.fill();})
+}
+function drawsh1(){
+    c.fillStyle="green"
+    c.fillRect(100, 100, 50, 50);
+    if(z2>=50){
+        // c.clearRect(100,90,50,10)
+        // c.clearRect(100,100,50-z1,10)
+enbu.splice(0,enbu.length)
+    // c.clearRect(100,100,50,50)
+    ch=1
+}
+}
+// ((eri.x-f1<=150&&eri.x+f1>=100)||(eri.x-f1<=1350&&eri.x+f1>=1300))
+function drawbon1(){
+    f1=Math.random()*10+5
+    if(f1%2==0){
+    c.fillStyle="crimson"}
+    if(f1%2==1){
+    c.fillStyle="cyan"}
+    // c.fillStyle="white"
+c.beginPath();
+c.arc(eri.x, eri.y, f1, 0, 2 * Math.PI); 
+c.fill();}
+function drawbon2(){
+    f2=Math.random()*10+5
+    if(f2%2==0){
+    c.fillStyle="crimson"}
+    if(f1%2==1){
+    c.fillStyle="cyan"}
+    c.beginPath();
+    c.arc(eri1.x, eri1.y, f2, 0, 2 * Math.PI);
+    c.fill();}
+function drawenbu(){
+enbu.forEach((er,ir)=>{
+        if(er.y>=position.y){
+            enbu.splice(ir,1)
+        }
+        c.fillStyle="orange"
+    c.beginPath();
+c.arc(er.x, er.y, 10, 0, 2 * Math.PI);
+c.fill();})
+}
+function drawbosbu(){
+    bosbu.forEach((er,ir)=>{
+    c.beginPath();
+c.arc(er.x, er.y, 10, 0, 2 * Math.PI);
+c.stroke();})
+
+}
+function drawen2(){
+en2.forEach((e,i) => {
+    for(let j=0;j<bu.length;j++){
+for(let i=0;i<en2.length;i++){
+let x,y
+if(en2[i].y+50>=bu[j].y-10&&(bu[j].x+10>=en2[i].x&&bu[j].x-10<=en2[i].x+50)){
+       
+         en2.splice(i,1)
+         bu.splice(j,1)
+    }
+}
+}
+    c.fillStyle="violet"
+    c.fillRect(en2[i].x, en2[i].y, 50, 50); 
+    
+});}
+function drawen(){
+    en.forEach((e,i) => {
+        for(let j=0;j<bu.length;j++){
+    for(let i=0;i<en.length;i++){
+    let x,y
+    if((en[i].y+50>=bu[j].y-10)&&(en[i].y<=bu[j].y-10)&&en[i].y<=bu[j].y+10&&(bu[j].x+10<=en[i].x+50&&bu[j].x-50>=en[i].x)){
+            // console.log(score)
+            score++
+             en.splice(i,1)
+             bu.splice(j,1)
+        }
+    }}
+    if(co%2==0){
+        if(i%3==0){
+    c.fillStyle="red"}
+    if(i%3==1){
+    c.fillStyle="violet"}  
+    if(i%3==0){
+    c.fillStyle="orange"}}
+    if(co%2==2){
+        if(i%3==0){
+    c.fillStyle="pink"}
+    if(i%3==1){
+        c.fillStyle="indigo"}  
+      if(i%3==0){
+    c.fillStyle="coral"}}
+    c.fillRect(en[i].x, en[i].y, 50, 50); 
+    
+});
+for(let j=0;j<bonbu1.length;j++){
+for(let i=0;i<en.length;i++){
+let x,y
+if((en[i].y+50>=bonbu1[j].y-20)&&(en[i].y<=bonbu1[j].y-20)&&en[i].y<=bonbu1[j].y+20&&(bonbu1[j].x+20<=en[i].x+50&&bonbu1[j].x-50>=en[i].x)){
+         console.log(score,score,score)
+        score++
+         en.splice(i,1)
+         bonbu1.splice(j,1)
+    }
+}
+}
+for(let j=0;j<bonbu2.length;j++){
+for(let i=0;i<en.length;i++){
+let x,y
+if((en[i].y+50>=bonbu2[j].y-20)&&(en[i].y<=bonbu2[j].y-20)&&en[i].y<=bonbu2[j].y+20&&(bonbu2[j].x+20<=en[i].x+50&&bonbu2[j].x-50>=en[i].x)){
+        // console.log(score)
+        score++
+         en.splice(i,1)
+         bonbu2.splice(j,1)
+    }
+}
+}
+for(let j=0;j<bonbu1.length;j++){
+for(let i=0;i<en2.length;i++){
+let x,y
+if((en2[i].y+50>=bonbu1[j].y-20)&&(en2[i].y<=bonbu1[j].y-20)&&en2[i].y<=bonbu1[j].y+20&&(bonbu1[j].x+20<=en2[i].x+50&&bonbu1[j].x-50>=en2[i].x)){
+         console.log("asdfghjkl;lkjhgfghjklkjhgfghjklk")
+        score++
+         en2.splice(i,1)
+         bonbu1.splice(j,1)
+    }
+}
+}
+for(let j=0;j<bonbu2.length;j++){
+for(let i=0;i<en2.length;i++){
+let x,y
+if((en2[i].y+50>=bonbu2[j].y-20)&&(en2[i].y<=bonbu2[j].y-20)&&en2[i].y<=bonbu2[j].y+20&&(bonbu2[j].x+20<=en2[i].x+50&&bonbu2[j].x-50>=en2[i].x)){
+        // console.log(score)
+        score++
+         en2.splice(i,1)
+         bonbu2.splice(j,1)
+    }
+}
+}
+for(let j=0;j<tbu.length;j++){
+for(let i=0;i<en.length;i++){
+let x,y
+    if((en[i].y+50>=tbu[j].y-10)&&(en[i].y<=tbu[j].y+10)&&(tbu[j].x+10>=en[i].x&&tbu[j].x-10<=en[i].x+50)){
+        
+        
+         en.splice(i,1)
+         tbu.splice(j,1)
+    }
+}
+}
+
+}
+//   var x5,y5,p5,q5
+function draw(){
+    c.fillText("Hiscore:"+hiscore, 10, 90);
+    // localStorage.removeItem("9");
+
+            
+            c.fillStyle="yellow"
+            c.fillRect(position.x, position.y, 50, 50);
+            c.fillStyle="black"
+            c.fillRect(position1.x, position1.y, 100, 100);
+            
+            
+        }
+        var stop=0
+        var dir1=[]
+        function update(){
+            if(z==50||z1==50){
+                done()
+                stop=1
+            }
+        //      qw1=document.getElementById('main')
+        //      df1=document.createElement('div')
+        //     df1.classList.add("ldrbu")
+        //     df1.setAttribute('id','ldrbou');
+            
+        //     qw1.appendChild(df1)
+        //     document.getElementById('ldrbou').innertext="game over"
+            
+        //    var dfg= document.createElement('button')
+        //    dfg.setAttribute('id','game over')
+        //    document.getElementById('ldrbou').appendChild(dfg)
+        //    document.getElementById('game over').innerHTML="game over"
+            if((ch==1&&ch1==1&&ch2==1)){
+    bonbu1.splice(0,bonbu1.length)
+    bonbu2.splice(0,bonbu1.length)
+
+}
+            ef=score
+            c.fillText(ef, 10, 50);
+            // console.log(hiscore)
+            
+            // c.fillText("dkfmkdsjfnskjdf ljn", 300, 300);
+
+            shenpos.forEach((e,i)=>{
+                dir1.push({x:6,y:0})
+if(e.x+50>=w){
+    dir1[i].x=-6
+     e.y+=8
+}
+
+if(e.x<=0){
+    dir1[i].x=+6
+      e.y+=8
+
+}
+
+
+        e.x+=dir1[i].x
+        // x5=e.x
+        // y5=e.y
+        // p5=position.x
+        // q5=position.y
+e.a.forEach((er,ir)=>{
+    // er.x+=(position.x+25-(x5+25))/200
+    er.y+=5
+
+})
+        // e.a.x+=position
+            })
+            drawbck()
+            if((eri.x-f1<=position.x+50&&eri.x+f1>=position.x) &&(eri.y+f1>=position.y)&&(eri.y-f1<=position.y+50)){
+det1=1
+            }
+            if((eri1.x-f2<=position.x+50&&eri.x+f2>=position.x) &&(eri1.y+f2>=position.y)&&(eri1.y-f2<=position.y+50)){
+det2=1
+            }
+            if(z4>=200){
+                bosbu.splice(0,bosbu.length)
+
+            }
+            if((ch==1&&ch1==1&&ch2==1)){
+    bonbu1.splice(0,bonbu1.length)
+    bonbu2.splice(0,bonbu2.length)
+
+}
+            // console.log(opts)
+            if(( ch==0&&ch1==0&&ch2==1)||det1||det2/*((eri.x-f1<=150&&eri.x+f1>=100) &&(eri.y+f1>=position.y))||((eri1.x-f2<=1350&&eri1.x+f2>=1300)&&(eri1.y+f2>=position.y))*/){
+                // console.log("fuck")
+            drawbonbu1()
+            drawbonbu2()}
+            // drawbckstrs()
+        //    ( ch==0&&ch1==0&&ch2==0)&&
+            
+if(( ch==1&&ch1==0&&ch2==0)&&det1/*(eri.x-f1<=150&&eri.x+f1>=100) &&(eri.y+f1>=position.y)*/)
+{
+  
+    bonbu1.forEach((e,i)=>{
+    e.x+=(1325-position.x+25)/200
+    e.y+=(125-position.y)/200
+    
+    })
+    bonbu2.forEach((e,i)=>{
+    e.x+=(w/2-position.x+25)/200
+    e.y+=(100-position.y)/200
+    
+    })
+}
+if(( ch==0&&ch1==1&&ch2==0)&&det2/*(eri1.x-f2<=1350&&eri1.x+f2>=1300)&&(eri1.y+f2>=position.y)*/){
+    bonbu1.forEach((e,i)=>{
+e.x+=(125-position.x+25)/200
+e.y+=(125-position.y)/200
+
+    })
+    bonbu2.forEach((e,i)=>{
+e.x+=(w/2-position.x+25)/200
+e.y+=(100-position.y)/200
+
+    })
+}
+if(( ch==0&&ch1==0&&ch2==1)){
+    bonbu1.forEach((e,i)=>{
+e.x+=(1325-position.x+25)/200
+e.y+=(125-position.y)/200
+
+    }) 
+    bonbu2.forEach((e,i)=>{
+e.x+=(125-position.x+25)/200
+e.y+=(125-position.y)/200
+
+    })
+}
+
+if(( ch==0&&ch1==1&&ch2==1)){
+        bonbu2.splice(0,bonbu2.length)
+        bonbu1.forEach((e,i)=>{
+e.x+=(125-position.x+25)/200
+e.y+=(125-position.y)/200})
+    }
+    if(( ch==1&&ch1==0&&ch2==1)){
+        bonbu2.splice(0,bonbu2.length)
+
+        bonbu1.forEach((e,i)=>{
+e.x+=(1325-position.x+25)/200
+e.y+=(125-position.y)/200
+
+    })    
+    }
+    if(( ch==1&&ch1==1&&ch2==0)){
+        bonbu2.splice(0,bonbu2.length)
+
+        bonbu1.forEach((e,i)=>{
+e.x+=(w/2-position.x+25)/200
+e.y+=(100-position.y)/200
+
+    })   
+    }
+if(sr1!=1){
+    drawsh1()
+    drawhb1()
+
+}
+if(sr==1&&sr2==1&&sr2==1){
+    ch=1
+    ch1=1
+    ch2=1
+}
+if(sr2!=1){
+    drawsh2()
+    drawhb2()
+
+}
+splbu.forEach((e,i)=>{
+
+// e.x1+=position.x+25-en2[i].x
+e.y1+=6
+
+
+})
+drawshen()
+drawshenbu()
+drawsplbu()
+    // drawsh2()
+    draw()
+    drawh()
+    drawhb()
+// drawhb1()
+if(sr!=1){
+
+    drawbos()
+    drawbosh()
+
+}
+drawen2()
+    // drawsh1()
+    drawen()
+    // drawhb2()
+    drawenbu1()
+    if(ch==1){
+
+       
+        eri.y+=4
+        drawbon1()
+    }
+    if(ch1==1){
+
+       
+eri1.y+=4
+drawbon2()
+}
+    
+drawbu()
+     drawenbu()
+     if(z>=40){
+     drawtb()}
+     drawbon()
+     drawbosbu()
+     ang=Math.asin(Math.sin((position.x+25-w/2)/(position.y-190)))
+     bosbu.forEach((e,i)=>{
+     if(i%2==0){
+        e.y+=6
+     }
+     if(i%2!=0){
+        e.x+=(position.x+25-w/2)/100
+        e.y+=(position.y-200 )/100
+
+     }
+    
+    })
+    // drawen2()
+    en.forEach((e,i)=>{
+        if(1){
+e.x+=(position1.x-en[i].x)/200
+e.y+=(position1.y-en[i].y)/200}
+// if(i%2==1){
+// e.x+=(position1.x-en[i].x)/200
+// e.y+=(position1.y-en[i].y)/200}
+
+    })
+    if(z>=40){
+    for(let i=0;i<en.length;i++){
+if(en[i].y+50>=position1.y-70){
+    let x,y
+tbu[i%4].x+=(en[i%4].x+25-(position1.x+50))/200
+tbu[i%4].y+=(en[i%4].y-position1.y)/200
+}}}
+    en2.forEach((e,i)=>{
+e.x+=(position.x-en2[i].x)/200
+e.y+=(position.y-en2[i].y)/200
+
+    })
+    budir[0].x=position.x+25
+    budir[0].y=100
+
+    bu.forEach((ep,ip)=>{
+        ep.x+=(budir[0].x-position.x+25)/200
+        ep.y+=(budir[0].y-position.y)/200
+
+// ep.y-=6;
+
+    })
+    enbu.forEach((ep,ip)=>{
+ep.x+=(position.x-125)/200;
+ep.y+=(position.y-150)/200;
+
+    })
+    enbu1.forEach((ep,ip)=>{
+ep.x+=(position.x-1325)/200;
+ep.y+=(position.y-150)/200;
+
+    })
+    bons.forEach((ep,ip)=>{
+// ep.x+=(position.x-1325)/200;
+ep.y+=6;
+
+    })
+    // bon.y+=6
+    position.x+=dir.x
+    position.y+=dir.y
+    
+}
+function drawbck(){
+    c.font = "30px Arial";
+
+    // c.fillText("dkfmkdsjfnskjdf ljn", w/2, h/2);
+
+    c.fillStyle="purple"
+    c.fillRect(0,0,w,h)
+}
+var kl=0
+function game(){
+    
+    window.requestAnimationFrame(game);
+    c.clearRect(0, 0, w,h)
+    // name=e2
+    if(score>=hiscore){
+                                hiscore=score;
+                                // console.log(hiscore)
+                                localStorage.setItem(e2,hiscore);}
+                                // c.fillText("dkfmkdsjfnskjdf ljn", 300, 300);
+                                if(kl%2==1||stop){
+                                    return}
+update()
+}
+
+game()
+function done(){ 
+qw1=document.getElementById('main')
+             df1=document.createElement('div')
+            df1.classList.add("ldrbu")
+            df1.setAttribute('id','ldrbou');
+            
+            qw1.appendChild(df1)
+            document.getElementById('ldrbou').innerHTML="  game over"
+            
+           var dfg= document.createElement('button')
+           dfg.classList.add('gobu')
+           dfg.setAttribute('id','game over')
+           document.getElementById('ldrbou').appendChild(dfg)
+           document.getElementById('game over').innerHTML="play again"
+           dfg.setAttribute('onclick',"pa1()")
+        }
+        function pa1(){
+            location.reload()
+        }
+window.addEventListener('keyup',p=>{
+    if(p.key!=" "){
+    dir.x=0
+    dir.y=0}
+    budir.x=0;
+        budir.y=0;
+})
+window.addEventListener('keydown', e =>{
+    if(e.key=="p"){
+kl++
+   }
+    if(e.key=="ArrowUp"&&!(dir.x==0&&dir.y==1)){
+        dir.x=0;
+        dir.y=-10
+    }
+    if(e.key=="ArrowDown"&&!(dir.x==0&&dir.y==-1)){
+        dir.x=0;
+        dir.y=10
+    }
+    if(e.key=="ArrowLeft"&&!(dir.x==1&&dir.y==0)){
+        dir.x=-10;
+        dir.y=0;
+    }
+    if(e.key=="ArrowRight"&&!(dir.x==-1&&dir.y==0)){
+        dir.x=10;
+        dir.y=0
+    }
+    if(e.key==" "){
+pa();
+    }})
+    window.addEventListener('keydown', e =>{
+   
+   if(e.key=="Enter"){
+    play();
+   }
+    if(e.key=="a"&&!(dir.x==1&&dir.y==0)){
+        budir[0].x-=10;
+        budir[0].y+=0;
+    }
+    if(e.key=="d"&&!(dir.x==-1&&dir.y==0)){
+        budir[0].x+=10;
+        budir[0].y=0;
+    }
+    if(e.key==" "){
+pa();
+bull.play()
+    }
+//     if(e.key=="p"){
+// kl++
+//     }
+    if(e.key!=""){
+console.log(e.key)
+    }
+})
+    </script>
+    <!-- <script src="si.js"></script> -->
+</body>
+</html>
